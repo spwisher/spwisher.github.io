@@ -5,7 +5,7 @@
 
 ## _Milestone 1_
 
-### Introduction and Industry Background
+### **Introduction and Industry Background**
 #### Pfizer Key Services/Products
 Pfizer contributes to the healthcare industry through the development and manufacturing of healthcare products:
 * Medicines
@@ -41,7 +41,7 @@ Information technology plays vital roles in several phases from beginning to end
 * Manufacturing automation
 * Supply chain security
 
-### Relevant Threat Trends and Critical Asset Identification
+### **Relevant Threat Trends and Critical Asset Identification**
 #### Key Threats Targeting Industry
 While biopharmaceutical companies have traditionally experienced cyber attacks frequently due to the valuable and critical services provided, certain companies working on COVID-19 vaccines have experienced a significant uptick in cyber attacks due to the value of the data and desire for knowledge of vaccine details.
 **Ransomware Attacks**
@@ -66,7 +66,7 @@ Patient confidentiality is of paramount importance. Pharmaceutical industries fr
 Intellectual property is the means by which a company can claim a product as its own and collect revenue on such products. The security of this information is crucial for a company to thrive to allow itself to serve as the sole proprietor of products in which they often have invested greatly. Without significant returns on these investments, companies have difficulty maintaining growth.
 5. Public Confidence
 Without public trust in a company or product, it is difficult to consistently maintain a solid customer base. The driver of sales of various products in the pharmaceutical industry is the demand by the customers, but if the company is misrepresented or if unfavorable data is leaked as a results of a data breach, public confidence in pharmaceutical products could suffer.
-### Diamond Models
+### **Diamond Models**
 #### RDP Ransomware
 ![image](https://user-images.githubusercontent.com/56060553/119281479-be0a0080-bbea-11eb-8b3d-0c0825bd8c06.png)
 #### Phishing Ransomware
@@ -77,7 +77,7 @@ Without public trust in a company or product, it is difficult to consistently ma
 ![image](https://user-images.githubusercontent.com/56060553/119281519-de39bf80-bbea-11eb-82b0-cb52de09350a.png)
 #### Cold-Storage Breach
 ![image](https://user-images.githubusercontent.com/56060553/119281534-e98ceb00-bbea-11eb-950c-b6f4b0496f97.png)
-### Intelligence Buy-In
+### **Intelligence Buy-In**
 The efforts of hacker groups and nation-states to attack pharmaceutical companies working on COVID-19 vaccines has increased dramatically due to the monumental demand, valuable data, and new working conditions.
 * The growing number of people working from home has resulted in an increased susceptibility to ransomware attacks through remote desktop vulnerabilities and increased phishing attacks.
 * Nation-state attacks have grown due to the desire to learn the trade secrets of Pfizer and other company developments for the COVID-19 vaccine. This provides an opportunity for a nation-state to steal intellectual property to develop and sell their own version of the vaccine or create black market counterfeit vaccines.
