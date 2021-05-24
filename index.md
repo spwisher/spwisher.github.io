@@ -1,9 +1,9 @@
 
 ![image](https://user-images.githubusercontent.com/56060553/119281274-f6f5a580-bbe9-11eb-9021-a6ffb8980342.png)
 
-# Pharmaceutical Company CTI for Pfizer
+# **Pharmaceutical Company CTI for Pfizer**
 
-## Milestone 1
+## _Milestone 1_
 
 ### Introduction and Industry Background
 #### Pfizer Key Services/Products
