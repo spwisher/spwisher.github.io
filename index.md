@@ -99,3 +99,66 @@ Pharmaceutical companies need to take a data-based approach to reduce the time n
 * Employee Security Awareness Training
 * Simplified Approach to Security
 * Qualified Information Security Experts
+
+## _Milestone 2_
+
+### **CTI Data Source Identification and Justification**
+#### AlienVault OTX
+![image](https://user-images.githubusercontent.com/56060553/122377102-9e2fd900-cf19-11eb-81d7-f81abb083eef.png)
+
+https://otx.alienvault.com/
+##### _Identification_
+* AlienVault OTX (Open Threat Exchange) is a global community in which users generate and publish threat data
+  * The threat data can be leveraged efficiently using open-source API to automate security updates and react to known threat indicators
+  * OTX pulses provide a threat summary, information on the target, and indicators of compromise (IOCs) such as (IP address, domains, emails, etc.)
+  * Over 19 million threat indicators are generated daily by over 100,000 participants in 140 countries
+##### _Justification_
+* Through leveraging the DirectConnect API in the company security tools, threats that are targeting the pharmaceutical industry can be exposed early and mitigated against
+  * The crowd-sourced approach allows companies to catch and protect against threats early upon community exposure
+  * Threat summaries are referred to as “pulses,” and they specify the related IOCs
+  * AlienVault OTX is used in approximately 1,049 companies of varying sizes
+
+![image](https://user-images.githubusercontent.com/56060553/122377322-d6cfb280-cf19-11eb-8ac4-f26b78fdc509.png)
+
+https://enlyft.com/tech/products/alienvault#
+
+#### Phishing Database
+![image](https://user-images.githubusercontent.com/56060553/122377529-02eb3380-cf1a-11eb-9f1a-d5c94c067452.png)
+
+Site: https://github.com/mitchellkrogza/Phishing.Database 
+##### _Identification_
+* Mitchell Krogza and his team leverage the PyFunceble testing tool to analyze and list active phishing domains:
+  * Total Phishing Domains Captured: **306033**
+  * Total Phishing Links Captured: **617809**
+  * Phishing domains are determined to be active based on HTTP status codes
+  * Companies can use this data to filter malicious emails and prevent them from reaching company employees
+##### _Justification_
+* Phishing is one of the most common ways that malicious actors attempt to exploit a company
+* When blacklisting known phishing domains/links, these phishing attacks will not be carried out since it would not reach the intended host
+* It is undetermined if companies leverage this specific source of phishing domains/links, but it is likely that some level of phishing prevention is in place for organizations within the pharmaceutical industry due to the cheap implementation and significant threats of exposure/loss when no safeguards are in place
+
+![image](https://user-images.githubusercontent.com/56060553/122377745-2f06b480-cf1a-11eb-8111-02a9e686ca96.png)
+### **Collection Strategies and Data Summary**
+**NOTE**: For the purpose of this exercise, the data collected will pertain to the pharmaceutical industry in addition to individual biopharmaceutical companies.
+#### AlienVault OTX
+##### _Data Collection Methods_
+*AlienVault OTX allows for querying pulses/IOCs based on tags and keywords
+*For simplicity, we will query the database through the AlienVault OTX webpage for the following keywords: pharmaceutical, healthcare, financial, and defense
+*The number of IOCs for each keyword is indicative of the number of threats exposed to the various industries, and it illustrates the volume of the threats that a pharmaceutical company could likely face.
+*This method of data collection is heavily dependent on the summary/tag data
+
+![image](https://user-images.githubusercontent.com/56060553/122378310-b81deb80-cf1a-11eb-987e-6389e90811c7.png)
+
+##### _IOC Data Collection_
+
+![image](https://user-images.githubusercontent.com/56060553/122378336-bd7b3600-cf1a-11eb-8632-4a71b3189578.png)
+
+**Takeaway**: The number of threat indicators for pharmaceuticals is comparable to other industries
+#### Phishing Database
+##### _Data Collection_
+Mitchell Krogza’s phishing database regularly generates updates to a list of phishing domains/links (Domains: 306033, Links: 617809)
+Upon exporting these lists, we can search for occurrences of keywords relevant to our industry of interest since they are typically more likely to be used to target the pharmaceutical industry:
+
+![image](https://user-images.githubusercontent.com/56060553/122378450-d4218d00-cf1a-11eb-9c55-0d9415b5e9fb.png)
+
+**Takeaway**: Many phishing domans/links are targeting pharmaceutical industries as well as customers/clients
