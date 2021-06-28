@@ -245,6 +245,8 @@ _Sample of 50 Phishing Domain Names_
 * The red X’s represent the mid-points of the 2 k-means cluster groups which may lead to the predictable classification of new potentially harmful domain names
 * This analysis leaves a bit to be desired since the data had to be significantly reduced due to computational limitations
 
+![image](https://user-images.githubusercontent.com/56060553/123604225-81b05e00-d7af-11eb-8af6-cdf13e6a4504.png)
+
 #### AlienVault OTX: Data Mining
 * Harvest harmful IP addresses from AlienVault OTX by scraping the IOC databases of pulses tagged as being considered relevant to the healthcare industry
 * With these IP addresses, the user can learn of the location of the attacker and can block them through the company’s firewall
@@ -257,7 +259,7 @@ _Sample of 50 Phishing Domain Names_
 
 ##### _Sample IPv4 Dataset_
 
-![image](https://user-images.githubusercontent.com/56060553/123602519-ad324900-d7ad-11eb-993a-cd66e117bff8.png)
+![image](https://user-images.githubusercontent.com/56060553/123604195-78bf8c80-d7af-11eb-8a23-604a3f8abba6.png)
 
 #### AlienVault OTX: Frequency Analysis
 * Correlation of IP address reputation to the targeted industry and country of origin to indicate potential capability and motive of attacker
@@ -273,6 +275,8 @@ _Sample of 50 Phishing Domain Names_
 * Takeaway: The United States is by far the highest frequency location of non-reputable IP Addresses
 * It is likely that foreign attackers use the US as a proxy to hide their actual IP location
 * Other IOC properties could be leveraged to solidify this analysis
+
+![image](https://user-images.githubusercontent.com/56060553/123604274-8bd25c80-d7af-11eb-8716-2aa0ebbb968e.png)
 
 * **NOTE:**  Only 1000 countries could be sampled due to IP location library limitations
 
