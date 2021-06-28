@@ -169,9 +169,7 @@ The table shown below demonstrates the data associated with 50 pulses. Note that
 #### Phishing Database
 ##### _Data Collection_
 Mitchell Krogza’s phishing database regularly generates updates to a list of phishing domains/links (Domains: 306033, Links: 617809)
-Upon exporting these lists, we can search for occurrences of keywords relevant to our industry of interest since they are typically more likely to be used to target the pharmaceutical industry:
-
-![image](https://user-images.githubusercontent.com/56060553/122378450-d4218d00-cf1a-11eb-9c55-0d9415b5e9fb.png)
+These phishing sites along with legitimate sites can be parsed  and modeled to classify the common textual trends seen in scam sites versus legitimate sites
 
 **Takeaway**: Many phishing domans/links are targeting pharmaceutical industries as well as customers/clients
 
@@ -228,3 +226,77 @@ _Sample of 50 Phishing Domain Names_
 * 000dmobilt9034.com
 * 000emailverifyingupdate.weebly.com
 * 000escritoriohb.tonohost.com
+
+## _Milestone 3_
+
+### **Analytical Approaches and Justification & Preliminary Visualizations**
+#### Phishing Database: Clustering
+* Through using k-mean clustering, we can determine the commonalities among various phishing domain names to allow for the classification and future prediction of unknown phishing sites using machine learning techniques.
+
+##### _Clustering Process:_
+1. Import all phishing domains as a python list
+2. Import the top 500 websites as a good domain list
+3. Append the two lists, and precondition some of the data to make it model-compatible
+4. Fit a PCA model based on the text data provided to represent the text data
+5. Apply K-means clustering modeling algorithm
+6. Observe clustering results
+
+* Principal Component analysis allowed for text data to be represented as generic data for modeling purposes
+* The red X’s represent the mid-points of the 2 k-means cluster groups which may lead to the predictable classification of new potentially harmful domain names
+* This analysis leaves a bit to be desired since the data had to be significantly reduced due to computational limitations
+
+#### AlienVault OTX: Data Mining
+* Harvest harmful IP addresses from AlienVault OTX by scraping the IOC databases of pulses tagged as being considered relevant to the healthcare industry
+* With these IP addresses, the user can learn of the location of the attacker and can block them through the company’s firewall
+
+##### _Data Mining Process (Using OTXv2 Python library):_
+1. Automate a user subscription to various pulses by querying for pulses related to the healthcare industry (366 pulse were returned and my account subscribed to them)
+2. Retrieve all pulses using the getall method
+3. Retrieve all IPv4 indicators of the pulses in the subscription list
+4. Save to a CSV file for later use (Approximately 3723 IP address were retrieved)
+
+##### _Sample IPv4 Dataset_
+
+![image](https://user-images.githubusercontent.com/56060553/123602519-ad324900-d7ad-11eb-993a-cd66e117bff8.png)
+
+#### AlienVault OTX: Frequency Analysis
+* Correlation of IP address reputation to the targeted industry and country of origin to indicate potential capability and motive of attacker
+* Use AlienVault OTX API to extract IP addresses and provide a ranked list along with country of origin
+* Through knowing the country of origin, it may be possible to establish the capabilities and motives of the attackers
+
+##### _Process for country-of-origin IP address frequency analysis:_
+1. Leverage the simple_geoip Python library
+2. Lookup the country of origin of all IP addresses found in the pulse analysis
+3. Count the occurrences of each country in the list
+4. Plot a histogram demonstrating the frequencies of occurrences
+
+* Takeaway: The United States is by far the highest frequency location of non-reputable IP Addresses
+* It is likely that foreign attackers use the US as a proxy to hide their actual IP location
+* Other IOC properties could be leveraged to solidify this analysis
+
+* **NOTE:**  Only 1000 countries could be sampled due to IP location library limitations
+
+### **Key Insights and Intelligence Summary**
+#### Key Insights
+##### _Types of infrastructure adversaries are using to conduct attacks_
+###### **Email Servers**
+* Improper training and tricky phishing sites necessitate a layer of security to detect new phishing emails before they reach the employee
+###### **Insecure Network Ports**
+* Another commonly compromised attack vector is through open ports that an attacker may access by breaching the network’s firewall and sending/receiving company network transactions to inject malware
+
+##### _Emerging threats towards the industry, threat actors, and tactics_
+* The threats to this industry are increasing from small-time hacktivists and cyber criminals to highly capable nation-state attacks
+* Due to the COVID-19 pandemic, this industry has become a frequent victim of nation-state level attacks in addition to the already prevalent ransomware attacks
+
+#### Intelligence Summary
+##### _Phishing Site Detection/Classification Clustering Analysis_
+* Through generating a robust classification model that classifies domain names as malicious or harmless, we could implement and continually improve upon a phishing safety net that protects email users from coming across malicious URLs
+* One of the biggest difficulties in drawing the association would be the computational capabilities of the modeling hardware
+* A more advanced approach may be able to assist the model to alleviate the need for the significant resources needed for model generation
+##### _AlienVault OTX Data Mining and IP Address Location Analysis_
+* Analyzing the IP addresses to determine the location of the adversaries can help determine the capabilities of the attacker as well as the motive
+  * Frequent occurrences of highly-capable nation-state adversary such as China or Russia would have indicated a clear correlation between them and the healthcare industry
+  * Due to the high frequency of United States locations, it’s likely that most attackers either mask their location through a proxy or there are far more local adversaries than nation-state adversaries
+  * Further analysis with multiple IOCs could determine whether these IP addresses are masking the location of the actual attacker and it could determine the capabilities of the attackers
+
+
