@@ -179,52 +179,52 @@ Upon exporting these lists, we can search for occurrences of keywords relevant t
 
 _Sample of 50 Phishing Domain Names_
 
-00000000000000000000000000000000000000dfjjjhv.000webhostapp.com
-000000000000000000000000000000000000dbscrfg.000webhostapp.com
-000000000000000000000000000yteyeuya.000webhostapp.com
-00000000000000000dhl.000webhostapp.com
-000000000000000ooooo.000webhostapp.com
-00000000000000rqrewewrwrdfq.000webhostapp.com
-0000000000000qowowiieueu0000000.000webhostapp.com
-000000000a0uutlook.weebly.com
-00000000920.us-south.cf.appdomain.cloud
-0000000wer.000webhostapp.com
-000000788-66666666.000webhostapp.com
-00000078uu7u8790090900.000webhostapp.com
-00-00-00-il.000webhostapp.com
-0.00000.life
-00000microsof.tonohost.com
-00000skunnnn.000webhostapp.com
-00001062.com
-000012223.weebly.com
-000012345000067890000.000webhostapp.com
-000025123.com
-00-002.weebly.com
-000032818.com
-00003485.com
-00005832.com
-00009483.com
-00009484.com
-000098.ihostfull.com
-0000bbffxzzzz900.000webhostapp.com
-0000.com.my
-0000promises.000webhostapp.com
-0000wa0outlook.weebly.com
-000102.ml
-00012sbcglobal.weebly.com
-000133210.000webhostapp.com
-0001refund.info
-0001safeworld0002.000webhostapp.com
-00024390000067.000webhostapp.com
-00025612.com
-0002-i-nastolatek-to-przegrales-zycie-i-to-z-kretesem.fun
-000340053.com
-000838774343.000webhostapp.com
-000-845int283-000.xyz
-000945.000webhostapp.com
-000asmr.com
-000chgojhd78jhvbwreuvk.webnode.com
-000codashoppfreee-771.duckdns.org
-000dmobilt9034.com
-000emailverifyingupdate.weebly.com
-000escritoriohb.tonohost.com
+* 00000000000000000000000000000000000000dfjjjhv.000webhostapp.com
+* 000000000000000000000000000000000000dbscrfg.000webhostapp.com
+* 000000000000000000000000000yteyeuya.000webhostapp.com
+* 00000000000000000dhl.000webhostapp.com
+* 000000000000000ooooo.000webhostapp.com
+* 00000000000000rqrewewrwrdfq.000webhostapp.com
+* 0000000000000qowowiieueu0000000.000webhostapp.com
+* 000000000a0uutlook.weebly.com
+* 00000000920.us-south.cf.appdomain.cloud
+* 0000000wer.000webhostapp.com
+* 000000788-66666666.000webhostapp.com
+* 00000078uu7u8790090900.000webhostapp.com
+* 00-00-00-il.000webhostapp.com
+* 0.00000.life
+* 00000microsof.tonohost.com
+* 00000skunnnn.000webhostapp.com
+* 00001062.com
+* 000012223.weebly.com
+* 000012345000067890000.000webhostapp.com
+* 000025123.com
+* 00-002.weebly.com
+* 8000032818.com
+* 00003485.com
+* 00005832.com
+* 00009483.com
+* 00009484.com
+* 000098.ihostfull.com
+* 0000bbffxzzzz900.000webhostapp.com
+* 0000.com.my
+* 0000promises.000webhostapp.com
+* 0000wa0outlook.weebly.com
+* 000102.ml
+* 00012sbcglobal.weebly.com
+* 000133210.000webhostapp.com
+* 0001refund.info
+* 0001safeworld0002.000webhostapp.com
+* 00024390000067.000webhostapp.com
+* 00025612.com
+* 0002-i-nastolatek-to-przegrales-zycie-i-to-z-kretesem.fun
+* 000340053.com
+* 000838774343.000webhostapp.com
+* 000-845int283-000.xyz
+* 000945.000webhostapp.com
+* 000asmr.com
+* 000chgojhd78jhvbwreuvk.webnode.com
+* 000codashoppfreee-771.duckdns.org
+* 000dmobilt9034.com
+* 000emailverifyingupdate.weebly.com
+* 000escritoriohb.tonohost.com
