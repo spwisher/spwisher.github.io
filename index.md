@@ -303,4 +303,76 @@ _Sample of 50 Phishing Domain Names_
   * Due to the high frequency of United States locations, it’s likely that most attackers either mask their location through a proxy or there are far more local adversaries than nation-state adversaries
   * Further analysis with multiple IOCs could determine whether these IP addresses are masking the location of the actual attacker and it could determine the capabilities of the attackers
 
+## _Milestone 4_
+
+### **Summary: Key Insights and Intelligences**
+#### _Emergence of New Threat Actors_
+  * Previously, the primary goal of the attackers of the pharmaceutical industry have been pursuing large payouts through ransomware attacks
+  * The threats to this industry are increasing from small-time hacktivists and cyber criminals to highly capable nation-state attackers
+  * Due to the COVID-19 pandemic, this industry has become a frequent victim of nation-state level attacks in addition to the already prevalent ransomware attacks
+  * Nation-state adversaries have significant resources and capabilities that allow them to subvert conventional protections
+  * Location of attackers can be difficult to pinpoint through conventional methods due to their use proxies from which their detected IP addresses originate
+  * Improved detection and protection measures must be taken to protect against highly capable adversaries
+
+#### _Data Mining of Non-reputable IP Addresses_
+  * In the case of AlienVault OTX, many non-reputable IP addresses and other IOC are captured by over 100,000 participants
+  * IOC data is provided to the community to allow companies to protect their networks
+  * Publicly-available Python API simplifies the process of extracting IOC data
+  * The healthcare industry was among top industries that are often associated with non-reputable IP addresses
+    * Financial Industry: 29,450 Known IOCs
+    * Education Industry: 26,826 Known IOCs
+    * Healthcare Industry: 21,127 Known IOCs
+
+#### _Email Server Threat Infrastructure_
+  * One of the most common methods for deploying malware is through URLs embedded in phishing emails
+  * Through harvesting and analyzing data, classification methods were used to attempt to characterize URL name attributes that could classify legitimate URLs and malicious URLs
+  * Through using this method, machine learning techniques could be utilized to train a model to detect various phishing URLs
+  * Through using machine learning techniques additional models could potentially be implemented to have robust phishing threat prevention
+  * Due to the adaptability of malicious attackers that may allow them to subvert the protections put in place through using ML techniques, employee training is one of the most important ways through which prevention can be achieved.
+
+### **Operational Intelligence**
+#### _Emergence of New Threat Actors_
+##### _How do you intend to disseminate your discovered intelligence?_
+* Become part of the Open Threat Exchange community to contribute IOC data to similar industries
+* The IT staff needs to be continuously briefed on threat actors and attacker capabilities to emphasize the criticality of robust protections by email, online seminars, and cybersecurity conferences
+* The IT staff will be notified via email/meetings on the attacker attempts and the state of protective measures
+##### _What courses of action do you intend to implement based on your identified intelligence?_
+* Known non-reputable IP addresses and other IOCs will be blocked by the network firewall and collected for further analysis
+* Analysis of the attacker IP addresses will help to determine the location of the attacker which will provide evidence of attacker profile
+##### _How can you use your discovered intelligence to inform your next iteration of CTI processes?_
+* The CTI process will automatically detect known IOCs and alert the IT staff when they are detected
+* The diamond models will be ranked and updated as more threat actors and capabilities are discovered
+
+#### _Data Mining of Non-reputable IP Addresses_
+##### _How do you intend to disseminate your discovered intelligence?_
+* Become part of the Open Threat Exchange community to contribute IOC data to similar industries
+* The IT security team will be involved throughout the entire process of utilizing this data
+* The IT security team will have automated programs that periodically upload and parse IOC data
+##### _What courses of do you intend to implement based on your identified intelligence?_
+* The IT security team will be directly involved in the implementation of the IOC data in the network security infrastructure
+* Malicious IP addresses will be blocked by the network firewall, and other IOC data will be implemented in a look-up table of the intrusion detection system
+##### _How can you use your discovered intelligence to inform your next iteration of CTI processes?_
+* Ensure that the use of IOCs is in the company’s security plan and IT user training
+* Implement an intrusion detection system that detects malicious IP addresses, reports them, and prevents them from intruding into the company network
+
+#### _Email Server Threat Infrastructure_
+##### _How do you intend to disseminate your discovered intelligence?_
+* Any phishing URLs that are detected and not in an existing database will be contributed to the prominent phishing databases
+* IT staff will maintain the phishing site detection program
+* Employees will be alerted via email if a phishing site makes it past the initial phishing site detection
+##### _What courses of action do you intend to implement based on your identified intelligence?_
+* A program will parse incoming emails for phishing URLs based on the database of known malicious URLs
+* A text-based clustering algorithm will be used to determine if unknown URLs are malicious
+* Undetected malicious emails will be flagged by trained personnel
+##### _How can you use your discovered intelligence to inform your next iteration of CTI processes?_
+* High-performance computing clusters will be acquired to train the complex text-based machine learning models
+
+### **Future Advanced Functionalities for the CTI platform**
+* Parse incoming emails for embedded URLs. Compare the URLs with those published in online phishing site databases as well as against the established classification model. Train all employees on the procedures that need to be followed before clicking an email URL.
+  * **Justification:** The first line of defense when filtering phishing emails is using the known list of malicious URLs found within these emails. The next level of defense in this case would be the classification model that determines whether an email URL is legitimate or malicious. The last line of defense would be the situational awareness of the employee who receives the malicious email.
+* Monitor AlienVault OTX IOC data to maintain an up-to-date database of malicious IP addresses and other indicators.
+  * **Justification:** The data collected from the OTX community is tremendously valuable as it is a prolific source of data that can be directly applied to the security framework.
+* Continually analyze the frequency of IP locations to detect trends and changes in the threat actor tendencies.
+  * **Justification:** Increased nation-state attacks necessitate more stringent security practices. Therefore, we need to monitor the sources of the attacks to determine whether the cost of more stringent security measures is warranted.
+
 
