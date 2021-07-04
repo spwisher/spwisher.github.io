@@ -332,13 +332,16 @@ _Sample of 50 Phishing Domain Names_
 
 ### **Operational Intelligence**
 #### _Emergence of New Threat Actors_
+
 ##### _How do you intend to disseminate your discovered intelligence?_
 * Become part of the Open Threat Exchange community to contribute IOC data to similar industries
 * The IT staff needs to be continuously briefed on threat actors and attacker capabilities to emphasize the criticality of robust protections by email, online seminars, and cybersecurity conferences
 * The IT staff will be notified via email/meetings on the attacker attempts and the state of protective measures
+
 ##### _What courses of action do you intend to implement based on your identified intelligence?_
 * Known non-reputable IP addresses and other IOCs will be blocked by the network firewall and collected for further analysis
 * Analysis of the attacker IP addresses will help to determine the location of the attacker which will provide evidence of attacker profile
+
 ##### _How can you use your discovered intelligence to inform your next iteration of CTI processes?_
 * The CTI process will automatically detect known IOCs and alert the IT staff when they are detected
 * The diamond models will be ranked and updated as more threat actors and capabilities are discovered
@@ -348,9 +351,11 @@ _Sample of 50 Phishing Domain Names_
 * Become part of the Open Threat Exchange community to contribute IOC data to similar industries
 * The IT security team will be involved throughout the entire process of utilizing this data
 * The IT security team will have automated programs that periodically upload and parse IOC data
+
 ##### _What courses of do you intend to implement based on your identified intelligence?_
 * The IT security team will be directly involved in the implementation of the IOC data in the network security infrastructure
 * Malicious IP addresses will be blocked by the network firewall, and other IOC data will be implemented in a look-up table of the intrusion detection system
+
 ##### _How can you use your discovered intelligence to inform your next iteration of CTI processes?_
 * Ensure that the use of IOCs is in the company’s security plan and IT user training
 * Implement an intrusion detection system that detects malicious IP addresses, reports them, and prevents them from intruding into the company network
@@ -360,10 +365,12 @@ _Sample of 50 Phishing Domain Names_
 * Any phishing URLs that are detected and not in an existing database will be contributed to the prominent phishing databases
 * IT staff will maintain the phishing site detection program
 * Employees will be alerted via email if a phishing site makes it past the initial phishing site detection
+
 ##### _What courses of action do you intend to implement based on your identified intelligence?_
 * A program will parse incoming emails for phishing URLs based on the database of known malicious URLs
 * A text-based clustering algorithm will be used to determine if unknown URLs are malicious
 * Undetected malicious emails will be flagged by trained personnel
+
 ##### _How can you use your discovered intelligence to inform your next iteration of CTI processes?_
 * High-performance computing clusters will be acquired to train the complex text-based machine learning models
 
